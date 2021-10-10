@@ -15,7 +15,8 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:copy-with-line-number.copy"
+		"onCommand:copy-with-line-number.copy",
+		"onCommand:copy-with-line-number.copy-without-tab"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
@@ -23,12 +24,20 @@
 			{
 				"command": "copy-with-line-number.copy",
 				"title": "Copy with Line Number: Copy"
+			},
+			{
+				"command": "copy-with-line-number.copy-without-tab",
+				"title": "Copy with Line Number: Copy without TAB"
 			}
 		],
 		"keybindings": [
 			{
 				"command": "copy-with-line-number.copy",
-				"key": "ctrl+alt+c"
+				"key": "ctrl+alt+l"
+			},
+			{
+				"command": "copy-with-line-number.copy-without-tab",
+				"key": "ctrl+alt+t"
 			}
 		]
 	},
